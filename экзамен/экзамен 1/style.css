@@ -1,0 +1,1364 @@
+                                    .body {
+                                        font-family: 'Roboto', sans-serif;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    .container {
+                                        max-width: 1000px;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    .square {
+                                        height: 100%;
+                                        display: flex;
+                                    }
+                                    
+                                    .hamburger-menu {
+                                        margin-left: 0 auto;
+                                        width: 20%;
+                                    }
+                                    
+                                    .hamburger-menu i {
+                                        margin: 0 5px 0 5px;
+                                    }
+                                    
+                                    .hamburger-menu h1 {
+                                        opacity: .8;
+                                        font-family: monospace;
+                                        width: 100%;
+                                        margin-bottom: 0;
+                                        padding-bottom: 25px;
+                                        background-color: #ECEFF1;
+                                        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                                    }
+                                    
+                                    .border-bottom {
+                                        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                                        height: 40px;
+                                    }
+                                    
+                                    .hamburger-menu input {
+                                        display: none;
+                                    }
+                                    
+                                    .menu__box {
+                                        width: 10%;
+                                        height: 100%;
+                                        margin: 0px;
+                                        padding: 0px;
+                                        list-style: none;
+                                        text-align: center;
+                                        background-color: #ECEFF1;
+                                        position: absolute;
+                                    }
+                                    
+                                    .menu__item {
+                                        display: block;
+                                        width: 133px;
+                                        padding: 20px 0px;
+                                        color: #333;
+                                        font-family: 'Roboto', sans-serif;
+                                        font-size: 17px;
+                                        font-weight: 600;
+                                        text-decoration: none;
+                                        text-align: left;
+                                    }
+                                    
+                                    .menu__item:hover {
+                                        background-color: #CFD8DC
+                                    }
+                                    
+                                    .dashboard {
+                                        width: 100%;
+                                        margin-left: 25px;
+                                        z-index: 1;
+                                    }
+                                    
+                                    .dashboard h1 {
+                                        opacity: .8;
+                                        font-family: monospace;
+                                        text-align: center;
+                                    }
+                                    
+                                    .grid_statistic {
+                                        display: grid;
+                                        padding-top: 40px;
+                                        margin: 0 auto;
+                                        grid-template-columns: repeat(4, 1fr);
+                                        max-width: 100%;
+                                        gap: 10px;
+                                        font-family: monospace;
+                                    }
+                                    
+                                    .block {
+                                        position: relative;
+                                        background-color: #ECEFF1;
+                                        border: 1px solid rgba(0, 0, 0, 0.1);
+                                        box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                        width: 200px;
+                                        height: 100%;
+                                        font-family: monospace;
+                                        padding-bottom: 8px;
+                                    }
+                                    
+                                    .block p {
+                                        opacity: 0.8;
+                                        text-align: right;
+                                        margin-right: 15px;
+                                    }
+                                    
+                                    .bold {
+                                        height: 35px;
+                                        margin-left: 15px;
+                                        margin-right: 15px;
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                                    }
+                                    
+                                    .block i {
+                                        margin-left: 10px;
+                                        margin-right: 10px;
+                                    }
+                                    
+                                    .image {
+                                        content: url(assets/image/1.png);
+                                        position: absolute;
+                                        width: 80px;
+                                        height: 80px;
+                                        top: -40px;
+                                        left: 10px;
+                                    }
+                                    
+                                    .block:nth-child(2) .image {
+                                        content: url(assets/image/2.png);
+                                    }
+                                    
+                                    .block:nth-child(3) .image {
+                                        content: url(assets/image/3.png);
+                                    }
+                                    
+                                    .block:nth-child(4) .image {
+                                        content: url(assets/image/4.png);
+                                    }
+                                    
+                                    .grid_graphic {
+                                        display: grid;
+                                        padding-top: 40px;
+                                        margin: 0 auto;
+                                        grid-template-columns: repeat(3, 1fr);
+                                        max-width: 100%;
+                                        gap: 10px;
+                                    }
+                                    
+                                    .card {
+                                        position: relative;
+                                        background-color: #ECEFF1;
+                                        border: 1px solid rgba(0, 0, 0, 0.1);
+                                        box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                        width: 270px;
+                                        height: 250px;
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        flex-direction: column;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    .card p {
+                                        opacity: .8;
+                                        font-family: monospace;
+                                        font-size: 15px;
+                                        margin-left: 15px;
+                                    }
+                                    
+                                    .card i {
+                                        margin-right: 10px;
+                                    }
+                                    
+                                    .image_graphic {
+                                        content: url(assets/image/10.png);
+                                        position: absolute;
+                                        width: 90%;
+                                        height: 55%;
+                                        right: 13px;
+                                        top: -20px;
+                                    }
+                                    
+                                    .card:nth-child(2) .image_graphic {
+                                        content: url(assets/image/11.png);
+                                    }
+                                    
+                                    .card:nth-child(3) .image_graphic {
+                                        content: url(assets/image/12.png);
+                                    }
+                                    
+                                    .grid_form {
+                                        display: grid;
+                                        padding-top: 40px;
+                                        margin: 0 auto;
+                                        grid-template-columns: repeat(2, 1fr);
+                                        max-width: 100%;
+                                        gap: 10px;
+                                    }
+                                    
+                                    .task {
+                                        position: relative;
+                                        background-color: #ECEFF1;
+                                        border: 1px solid rgba(0, 0, 0, 0.1);
+                                        box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                        width: 100%;
+                                        height: 300px;
+                                        margin: 0 auto;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        font-family: monospace;
+                                    }
+                                    
+                                    .task form {
+                                        margin: 0;
+                                        padding: 10px 20px 10px 20px;
+                                        opacity: .8;
+                                        font-family: monospace;
+                                    }
+                                    
+                                    .yellow_box {
+                                        position: absolute;
+                                        top: -25px;
+                                        left: 25px;
+                                        background-color: #d4951c;
+                                        color: white;
+                                        border: 1px solid rgba(0, 0, 0, 0.1);
+                                        box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                        width: 90%;
+                                        height: 70px;
+                                        margin: 0 auto;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                    
+                                    .yellow_box button {
+                                        border: none;
+                                        background-color: #d4951c;
+                                        color: white;
+                                    }
+                                    
+                                    .yellow_box button:hover {
+                                        background-color: #e9b047;
+                                    }
+                                    
+                                    .yellow_box i {
+                                        margin: 10px;
+                                    }
+                                    
+                                    .stat {
+                                        position: relative;
+                                        background-color: #ECEFF1;
+                                        border: 1px solid rgba(0, 0, 0, 0.1);
+                                        box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                        width: 100%;
+                                        height: 300px;
+                                        margin: 0 auto;
+                                        font-family: monospace;
+                                    }
+                                    
+                                    .blue_box {
+                                        position: absolute;
+                                        top: -25px;
+                                        left: 25px;
+                                        background-color: #1f428d;
+                                        color: white;
+                                        border: 1px solid rgba(0, 0, 0, 0.1);
+                                        box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                        width: 90%;
+                                        height: 70px;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    .blue_box p {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding-top: 5px;
+                                        opacity: 0.9;
+                                    }
+                                    
+                                    .list_grid {
+                                        display: grid;
+                                        padding-top: 65px;
+                                        margin: 0 auto;
+                                        grid-template-columns: repeat(4, 1fr);
+                                        max-width: 100%;
+                                        opacity: 0.8;
+                                    }
+                                    
+                                    .list {
+                                        margin: 0 auto;
+                                        padding-top: 20px;
+                                    }
+                                    
+                                    .footer {
+                                        border-top: 1px solid rgba(0, 0, 0, 0.2);
+                                        width: 100%;
+                                        margin-top: 20px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        opacity: .8;
+                                        font-family: monospace;
+                                    }
+                                    
+                                    .footer ul,
+                                    a {
+                                        color: black;
+                                        text-decoration: none;
+                                        list-style: none;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        width: 20%;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        padding-left: 0px;
+                                        z-index: 1;
+                                    }
+                                    
+                                    .footer p {
+                                        margin-right: 20px;
+                                    }
+                                    
+                                    label {
+                                        -webkit-touch-callout: none;
+                                        -webkit-user-select: none;
+                                        -khtml-user-select: none;
+                                        -moz-user-select: none;
+                                        -ms-user-select: none;
+                                        user-select: none;
+                                    }
+                                    
+                                    input[type=checkbox].css-checkbox {
+                                        position: absolute;
+                                        overflow: hidden;
+                                        clip: rect(0 0 0 0);
+                                        height: 1px;
+                                        width: 1px;
+                                        margin: -1px;
+                                        padding: 0;
+                                        border: 0;
+                                    }
+                                    
+                                    input[type=checkbox].css-checkbox+label.css-label {
+                                        padding-left: 20px;
+                                        height: 15px;
+                                        display: inline-block;
+                                        line-height: 15px;
+                                        background-repeat: no-repeat;
+                                        background-position: 0 0;
+                                        font-size: 15px;
+                                        vertical-align: middle;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    input[type=checkbox].css-checkbox:checked+label.css-label {
+                                        background-position: 0 -15px;
+                                    }
+                                    
+                                    .css-label {
+                                        background-image: url(http://csscheckbox.com/checkboxes/dark-check-green.png);
+                                    }
+                                    
+                                    .lite-x-red {
+                                        background-image: url(http://csscheckbox.com/checkboxes/lite-x-red.png);
+                                    }
+                                    
+                                    .lite-green-check {
+                                        background-image: url(http://csscheckbox.com/checkboxes/lite-green-check.png);
+                                    }
+                                    /* second_page*/
+                                    
+                                    .square_profile {
+                                        display: flex;
+                                        width: 100%;
+                                        z-index: 1;
+                                        margin-top: 100px;
+                                    }
+                                    
+                                    .profile {
+                                        border: 1px solid rgba(0, 0, 0, 0.1);
+                                        box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                        width: 65%;
+                                        margin: 10px;
+                                        position: relative;
+                                        font-family: monospace;
+                                    }
+                                    
+                                    .red_block {
+                                        position: absolute;
+                                        left: 25px;
+                                        top: -30px;
+                                        color: white;
+                                        background-color: #bd194b;
+                                        box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                        width: 90%;
+                                        height: 90px;
+                                    }
+                                    
+                                    .red_block p {
+                                        font-size: 18px;
+                                        margin-top: 22px;
+                                        margin-left: 30px;
+                                    }
+                                    
+                                    .form_profile {
+                                        padding-top: 15%;
+                                        display: flex;
+                                    }
+                                    
+                                    .text_input {
+                                        margin: 0 auto;
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    
+                                    .text_input button,
+                                    input {
+                                        border: none;
+                                        background-color: transparent;
+                                    }
+                                    
+                                    .text_input button {
+                                        background-color: #bd194b;
+                                        color: white;
+                                        width: 100%;
+                                        font-size: 18px;
+                                    }
+                                    
+                                    .rows {
+                                        margin: 0 auto;
+                                        width: 100%;
+                                    }
+                                    
+                                    .item_input {
+                                        width: 110px;
+                                        margin: 0 auto;
+                                        font-size: 10px;
+                                        padding: 14px;
+                                        border: none;
+                                        border-radius: 3px;
+                                        outline: none;
+                                        border-bottom: 1px solid white;
+                                    }
+                                    
+                                    .item_input::placeholder {
+                                        color: rgba(0, 0, 0, 0.6);
+                                        font-size: 14px;
+                                    }
+                                    
+                                    .info_user {
+                                        border: 1px solid rgba(0, 0, 0, 0.1);
+                                        box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                        width: 35%;
+                                        text-align: center;
+                                        position: relative;
+                                    }
+                                    
+                                    .info_user h3 {
+                                        font-size: 19px;
+                                        padding-top: 120px;
+                                        width: 50%;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    .info_user p {
+                                        font-size: 14px;
+                                        padding: 0 20px;
+                                    }
+                                    
+                                    .info_user span {
+                                        font-size: 14px;
+                                        color: gray;
+                                        text-transform: uppercase;
+                                    }
+                                    
+                                    .image_user {
+                                        content: url(assets/image/pic.png);
+                                        position: absolute;
+                                        top: -50px;
+                                        right: 43px;
+                                    }
+                                    
+                                    .footer_second_page {
+                                        border-top: 1px solid rgba(0, 0, 0, 0.2);
+                                        width: 100%;
+                                        margin-top: 20px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        font-family: monospace;
+                                    }
+                                    
+                                    .footer_ul {
+                                        color: black;
+                                        text-decoration: none;
+                                        list-style: none;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        width: 20%;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        padding-left: 0px;
+                                        z-index: 1;
+                                    }
+                                    
+                                    @media screen and (min-width: 850px) and (max-width: 1000px) {
+                                        .container {
+                                            max-width: 850px;
+                                            margin: 0 auto;
+                                        }
+                                        .dashboard h1 {
+                                            opacity: .8;
+                                            font-family: monospace;
+                                            text-align: center;
+                                        }
+                                        .menu__item {
+                                            width: 138px;
+                                        }
+                                        .grid_statistic {
+                                            display: grid;
+                                            padding-top: 40px;
+                                            margin: 0 auto;
+                                            grid-template-columns: repeat(2, 1fr);
+                                            max-width: 100%;
+                                            gap: 50px;
+                                        }
+                                        .block {
+                                            position: relative;
+                                            background-color: #ECEFF1;
+                                            border: 1px solid rgba(0, 0, 0, 0.1);
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            width: 310px;
+                                            height: 100%;
+                                            margin: 0 auto;
+                                        }
+                                        .image {
+                                            content: url(assets/image/1.png);
+                                            position: absolute;
+                                            width: 100px;
+                                            height: 100px;
+                                            top: -35px;
+                                            left: 50px;
+                                        }
+                                        .card {
+                                            position: relative;
+                                            background-color: #ECEFF1;
+                                            border: 1px solid rgba(0, 0, 0, 0.1);
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            width: 200px;
+                                            height: 200px;
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            flex-direction: column;
+                                            margin: 0 auto;
+                                        }
+                                        .card p {
+                                            font-size: 11px;
+                                            margin-left: 15px;
+                                        }
+                                        .image_graphic {
+                                            content: url(assets/image/10.png);
+                                            position: absolute;
+                                            width: 90%;
+                                            height: 55%;
+                                            right: 9px;
+                                            top: -20px;
+                                        }
+                                        .grid_form {
+                                            display: grid;
+                                            padding-top: 40px;
+                                            margin: 0 auto;
+                                            grid-template-columns: repeat(1, 1fr);
+                                            max-width: 100%;
+                                            gap: 10px;
+                                        }
+                                        .task {
+                                            position: relative;
+                                            background-color: #ECEFF1;
+                                            border: 1px solid rgba(0, 0, 0, 0.1);
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            width: 100%;
+                                            height: 300px;
+                                            margin: 0 auto;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        .footer ul,
+                                        a {
+                                            width: 22%;
+                                            font-size: 13px;
+                                        }
+                                        /* second_page*/
+                                        .square_profile {
+                                            display: flex;
+                                            flex-direction: column-reverse;
+                                            width: 100%;
+                                            margin: 0 auto;
+                                            z-index: 1;
+                                            margin-top: 100px;
+                                        }
+                                        .profile {
+                                            width: 90%;
+                                            margin: 0 auto;
+                                            position: relative;
+                                        }
+                                        .info_user {
+                                            width: 90%;
+                                            height: 300px;
+                                            margin: 0 auto;
+                                            margin-bottom: 100px;
+                                            text-align: center;
+                                            position: relative;
+                                        }
+                                        .info_user h3 {
+                                            font-size: 22px;
+                                            width: 24%;
+                                        }
+                                        .info_user p {
+                                            font-size: 18px;
+                                            padding: 0 30px;
+                                        }
+                                        .image_user {
+                                            content: url(assets/image/pic.png);
+                                            position: absolute;
+                                            top: -60px;
+                                            right: 225px;
+                                        }
+                                        .form_profile {
+                                            margin: 0 auto;
+                                            display: flex;
+                                        }
+                                    }
+                                    
+                                    @media screen and (min-width: 650px) and (max-width: 850px) {
+                                        .container {
+                                            max-width: 650px;
+                                            margin: 0 auto;
+                                        }
+                                        .hamburger-menu h1 {
+                                            display: none;
+                                        }
+                                        .dashboard {
+                                            width: 100%;
+                                            margin: 0 auto;
+                                        }
+                                        .dashboard h1 {
+                                            opacity: .8;
+                                            font-family: monospace;
+                                            text-align: center;
+                                        }
+                                        .square {
+                                            display: block
+                                        }
+                                        #menu__toggle {
+                                            opacity: 0
+                                        }
+                                        .menu__btn {
+                                            display: flex;
+                                            align-items: center;
+                                            position: absolute;
+                                            top: 50px;
+                                            left: 55px;
+                                            width: 26px;
+                                            height: 26px;
+                                            cursor: pointer;
+                                            z-index: 50
+                                        }
+                                        .menu__btn>span,
+                                        .menu__btn>span::before,
+                                        .menu__btn>span::after {
+                                            display: block;
+                                            position: absolute;
+                                            width: 100%;
+                                            height: 2px;
+                                            background-color: #616161
+                                        }
+                                        .menu__btn>span::before {
+                                            content: '';
+                                            top: -8px
+                                        }
+                                        .menu__btn>span::after {
+                                            content: '';
+                                            top: 8px
+                                        }
+                                        .menu__box {
+                                            display: block;
+                                            position: absolute;
+                                            visibility: hidden;
+                                            top: 0;
+                                            left: -100%;
+                                            width: 300px;
+                                            height: 100%;
+                                            margin: 0;
+                                            padding: 80px 0;
+                                            list-style: none;
+                                            text-align: center;
+                                            background-color: #ECEFF1;
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            z-index: 40;
+                                        }
+                                        .menu__item {
+                                            display: block;
+                                            padding: 12px 24px;
+                                            margin-top: 20px;
+                                            color: #333;
+                                            font-family: 'Roboto', sans-serif;
+                                            font-size: 20px;
+                                            font-weight: 600;
+                                            text-decoration: none;
+                                            width: 252px;
+                                        }
+                                        .menu__item:hover {
+                                            background-color: #CFD8DC
+                                        }
+                                        #menu__toggle:checked~.menu__btn>span {
+                                            transform: rotate(45deg)
+                                        }
+                                        #menu__toggle:checked~.menu__btn>span::before {
+                                            top: 0;
+                                            transform: rotate(0)
+                                        }
+                                        #menu__toggle:checked~.menu__btn>span::after {
+                                            top: 0;
+                                            transform: rotate(90deg)
+                                        }
+                                        #menu__toggle:checked~.menu__box {
+                                            visibility: visible;
+                                            left: 0
+                                        }
+                                        .menu__btn>span,
+                                        .menu__btn>span::before,
+                                        .menu__btn>span::after {
+                                            transition-duration: .25s
+                                        }
+                                        .menu__box {
+                                            transition-duration: .25s
+                                        }
+                                        .menu__item {
+                                            transition-duration: .25s
+                                        }
+                                        .grid_statistic {
+                                            display: grid;
+                                            padding-top: 40px;
+                                            margin: 0 auto;
+                                            grid-template-columns: repeat(2, 1fr);
+                                            max-width: 100%;
+                                            gap: 50px;
+                                        }
+                                        .block {
+                                            position: relative;
+                                            background-color: #ECEFF1;
+                                            border: 1px solid rgba(0, 0, 0, 0.1);
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            width: 300px;
+                                            height: 100%;
+                                            margin: 0 auto;
+                                        }
+                                        .image {
+                                            content: url(assets/image/1.png);
+                                            position: absolute;
+                                            width: 100px;
+                                            height: 100px;
+                                            top: -40px;
+                                            left: 45px;
+                                        }
+                                        .card {
+                                            position: relative;
+                                            background-color: #ECEFF1;
+                                            border: 1px solid rgba(0, 0, 0, 0.1);
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            width: 200px;
+                                            height: 250px;
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            flex-direction: column;
+                                            margin: 0 auto;
+                                        }
+                                        .card p {
+                                            font-size: 11px;
+                                            margin-left: 15px;
+                                        }
+                                        .image_graphic {
+                                            content: url(assets/image/10.png);
+                                            position: absolute;
+                                            width: 90%;
+                                            height: 55%;
+                                            right: 9px;
+                                            top: -20px;
+                                        }
+                                        .grid_form {
+                                            display: grid;
+                                            padding-top: 40px;
+                                            margin: 0 auto;
+                                            grid-template-columns: repeat(1, 1fr);
+                                            max-width: 100%;
+                                            gap: 40px;
+                                        }
+                                        .task {
+                                            position: relative;
+                                            background-color: #ECEFF1;
+                                            border: 1px solid rgba(0, 0, 0, 0.1);
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            width: 100%;
+                                            height: 300px;
+                                            margin: 0 auto;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        .footer ul,
+                                        a {
+                                            width: 22%;
+                                            font-size: 13px;
+                                        }
+                                        /* second_page*/
+                                        .square_profile {
+                                            display: flex;
+                                            flex-direction: column-reverse;
+                                            width: 100%;
+                                            margin: 0 auto;
+                                            z-index: 1;
+                                            margin-top: 100px;
+                                        }
+                                        .profile {
+                                            width: 90%;
+                                            margin: 0 auto;
+                                            position: relative;
+                                        }
+                                        .info_user {
+                                            width: 90%;
+                                            height: 300px;
+                                            margin: 0 auto;
+                                            margin-bottom: 100px;
+                                            text-align: center;
+                                            position: relative;
+                                        }
+                                        .info_user h3 {
+                                            font-size: 20px;
+                                            width: 25%;
+                                        }
+                                        .info_user p {
+                                            font-size: 18px;
+                                            padding: 0 30px;
+                                        }
+                                        .image_user {
+                                            content: url(assets/image/pic.png);
+                                            position: absolute;
+                                            top: -60px;
+                                            right: 205px;
+                                        }
+                                        .form_profile {
+                                            margin: 0 auto;
+                                            display: flex;
+                                        }
+                                    }
+                                    
+                                    @media screen and (min-width: 500px) and (max-width: 650px) {
+                                        .container {
+                                            max-width: 500px;
+                                            margin: 0 auto;
+                                        }
+                                        .square {
+                                            display: block
+                                        }
+                                        .hamburger-menu h1 {
+                                            display: none;
+                                        }
+                                        .dashboard {
+                                            width: 100%;
+                                            margin: 0 auto;
+                                        }
+                                        .dashboard h1 {
+                                            opacity: .8;
+                                            font-family: monospace;
+                                            text-align: center;
+                                        }
+                                        #menu__toggle {
+                                            opacity: 0
+                                        }
+                                        .menu__btn {
+                                            display: flex;
+                                            align-items: center;
+                                            position: absolute;
+                                            top: 50px;
+                                            left: 40px;
+                                            width: 26px;
+                                            height: 26px;
+                                            cursor: pointer;
+                                            z-index: 50
+                                        }
+                                        .menu__btn>span,
+                                        .menu__btn>span::before,
+                                        .menu__btn>span::after {
+                                            display: block;
+                                            position: absolute;
+                                            width: 100%;
+                                            height: 2px;
+                                            background-color: #616161
+                                        }
+                                        .menu__btn>span::before {
+                                            content: '';
+                                            top: -8px
+                                        }
+                                        .menu__btn>span::after {
+                                            content: '';
+                                            top: 8px
+                                        }
+                                        .menu__box {
+                                            display: block;
+                                            position: absolute;
+                                            visibility: hidden;
+                                            top: 0;
+                                            left: -100%;
+                                            width: 300px;
+                                            height: 100%;
+                                            margin: 0;
+                                            padding: 80px 0;
+                                            list-style: none;
+                                            text-align: center;
+                                            background-color: #ECEFF1;
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            z-index: 40;
+                                        }
+                                        .menu__item {
+                                            display: block;
+                                            margin-top: 20px;
+                                            padding: 12px 24px;
+                                            color: #333;
+                                            font-family: 'Roboto', sans-serif;
+                                            font-size: 20px;
+                                            font-weight: 600;
+                                            text-decoration: none;
+                                            width: 252px;
+                                        }
+                                        .menu__item:hover {
+                                            background-color: #CFD8DC
+                                        }
+                                        #menu__toggle:checked~.menu__btn>span {
+                                            transform: rotate(45deg)
+                                        }
+                                        #menu__toggle:checked~.menu__btn>span::before {
+                                            top: 0;
+                                            transform: rotate(0)
+                                        }
+                                        #menu__toggle:checked~.menu__btn>span::after {
+                                            top: 0;
+                                            transform: rotate(90deg)
+                                        }
+                                        #menu__toggle:checked~.menu__box {
+                                            visibility: visible;
+                                            left: 0
+                                        }
+                                        .menu__btn>span,
+                                        .menu__btn>span::before,
+                                        .menu__btn>span::after {
+                                            transition-duration: .25s
+                                        }
+                                        .menu__box {
+                                            transition-duration: .25s
+                                        }
+                                        .menu__item {
+                                            transition-duration: .25s
+                                        }
+                                        .grid_statistic {
+                                            display: grid;
+                                            padding-top: 40px;
+                                            margin: 0 auto;
+                                            grid-template-columns: repeat(2, 1fr);
+                                            max-width: 100%;
+                                            gap: 40px;
+                                        }
+                                        .block {
+                                            position: relative;
+                                            background-color: #ECEFF1;
+                                            border: 1px solid rgba(0, 0, 0, 0.1);
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            width: 230px;
+                                            height: 100%;
+                                            margin: 0 auto;
+                                        }
+                                        .image {
+                                            content: url(assets/image/1.png);
+                                            position: absolute;
+                                            width: 80px;
+                                            height: 80px;
+                                            top: -20px;
+                                            left: 20px;
+                                        }
+                                        .card {
+                                            position: relative;
+                                            background-color: #ECEFF1;
+                                            border: 1px solid rgba(0, 0, 0, 0.1);
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            margin: 0 auto;
+                                            width: 95%;
+                                            height: 250px;
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            flex-direction: column;
+                                            margin: 0 auto;
+                                        }
+                                        .card p {
+                                            font-family: monospace;
+                                            font-size: 15px;
+                                            margin-left: 26px;
+                                        }
+                                        .grid_graphic {
+                                            display: grid;
+                                            padding-top: 40px;
+                                            margin: 0 auto;
+                                            grid-template-columns: repeat(1, 1fr);
+                                            max-width: 100%;
+                                            gap: 40px;
+                                        }
+                                        .image_graphic {
+                                            content: url(assets/image/10.png);
+                                            position: absolute;
+                                            width: 90%;
+                                            height: 55%;
+                                            right: 24px;
+                                            top: -20px;
+                                        }
+                                        .grid_form {
+                                            display: grid;
+                                            padding-top: 40px;
+                                            margin: 0 auto;
+                                            grid-template-columns: repeat(1, 1fr);
+                                            max-width: 100%;
+                                            gap: 40px;
+                                        }
+                                        .task {
+                                            width: 90%;
+                                        }
+                                        .stat {
+                                            width: 90%;
+                                        }
+                                        .footer ul,
+                                        a {
+                                            font-size: 12px;
+                                        }
+                                        .footer p {
+                                            font-size: 14px;
+                                        }
+                                        .footer ul,
+                                        a {
+                                            width: 25%;
+                                        }
+                                        /* second_page*/
+                                        .square_profile {
+                                            display: flex;
+                                            flex-direction: column-reverse;
+                                            width: 100%;
+                                            margin: 0 auto;
+                                            z-index: 1;
+                                            margin-top: 100px;
+                                        }
+                                        .profile {
+                                            width: 90%;
+                                            margin: 0 auto;
+                                            position: relative;
+                                        }
+                                        .info_user {
+                                            width: 90%;
+                                            height: 300px;
+                                            margin: 0 auto;
+                                            margin-bottom: 100px;
+                                            text-align: center;
+                                            position: relative;
+                                        }
+                                        .info_user h3 {
+                                            font-size: 20px;
+                                            width: 30%;
+                                        }
+                                        .info_user p {
+                                            font-size: 16px;
+                                            padding: 0 30px;
+                                        }
+                                        .image_user {
+                                            content: url(assets/image/pic.png);
+                                            position: absolute;
+                                            top: -60px;
+                                            right: 137px;
+                                        }
+                                        .form_profile {
+                                            margin: 0 auto;
+                                            display: flex;
+                                        }
+                                        .footer_ul {
+                                            width: 26%;
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width: 500px) {
+                                        .container {
+                                            max-width: 500px;
+                                            margin: 0 auto;
+                                        }
+                                        .square {
+                                            display: block
+                                        }
+                                        .hamburger-menu h1 {
+                                            display: none;
+                                        }
+                                        .dashboard {
+                                            width: 100%;
+                                            margin: 0 auto;
+                                        }
+                                        .dashboard h1 {
+                                            opacity: .8;
+                                            font-family: monospace;
+                                            text-align: center;
+                                        }
+                                        #menu__toggle {
+                                            opacity: 0
+                                        }
+                                        .menu__btn {
+                                            display: flex;
+                                            align-items: center;
+                                            position: absolute;
+                                            top: 50px;
+                                            left: 40px;
+                                            width: 26px;
+                                            height: 26px;
+                                            cursor: pointer;
+                                            z-index: 50
+                                        }
+                                        .menu__btn>span,
+                                        .menu__btn>span::before,
+                                        .menu__btn>span::after {
+                                            display: block;
+                                            position: absolute;
+                                            width: 100%;
+                                            height: 2px;
+                                            background-color: #616161
+                                        }
+                                        .menu__btn>span::before {
+                                            content: '';
+                                            top: -8px
+                                        }
+                                        .menu__btn>span::after {
+                                            content: '';
+                                            top: 8px
+                                        }
+                                        .menu__box {
+                                            display: block;
+                                            position: absolute;
+                                            visibility: hidden;
+                                            top: 0;
+                                            left: -100%;
+                                            width: 100%;
+                                            height: 100%;
+                                            margin: 0;
+                                            padding: 80px 0;
+                                            list-style: none;
+                                            text-align: center;
+                                            background-color: #ECEFF1;
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            z-index: 40;
+                                        }
+                                        .menu__item {
+                                            display: block;
+                                            margin-top: 20px;
+                                            padding: 12px 24px;
+                                            color: #333;
+                                            font-family: 'Roboto', sans-serif;
+                                            font-size: 20px;
+                                            font-weight: 600;
+                                            text-decoration: none;
+                                            width: 252px;
+                                        }
+                                        .menu__item:hover {
+                                            background-color: #CFD8DC
+                                        }
+                                        #menu__toggle:checked~.menu__btn>span {
+                                            transform: rotate(45deg)
+                                        }
+                                        #menu__toggle:checked~.menu__btn>span::before {
+                                            top: 0;
+                                            transform: rotate(0)
+                                        }
+                                        #menu__toggle:checked~.menu__btn>span::after {
+                                            top: 0;
+                                            transform: rotate(90deg)
+                                        }
+                                        #menu__toggle:checked~.menu__box {
+                                            visibility: visible;
+                                            left: 0
+                                        }
+                                        .menu__btn>span,
+                                        .menu__btn>span::before,
+                                        .menu__btn>span::after {
+                                            transition-duration: .25s
+                                        }
+                                        .menu__box {
+                                            transition-duration: .25s
+                                        }
+                                        .menu__item {
+                                            transition-duration: .25s
+                                        }
+                                        .grid_statistic {
+                                            display: grid;
+                                            margin: 0 auto;
+                                            grid-template-columns: repeat(1, 1fr);
+                                            max-width: 100%;
+                                            gap: 40px;
+                                        }
+                                        .block {
+                                            position: relative;
+                                            background-color: #ECEFF1;
+                                            border: 1px solid rgba(0, 0, 0, 0.1);
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            width: 90%;
+                                            height: 100%;
+                                            margin: 0 auto;
+                                        }
+                                        .image {
+                                            content: url(assets/image/1.png);
+                                            position: absolute;
+                                            width: 80px;
+                                            height: 80px;
+                                            top: -20px;
+                                            left: 20px;
+                                        }
+                                        .card {
+                                            position: relative;
+                                            background-color: #ECEFF1;
+                                            border: 1px solid rgba(0, 0, 0, 0.1);
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            margin: 0 auto;
+                                            width: 90%;
+                                            height: 250px;
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            flex-direction: column;
+                                            margin: 0 auto;
+                                        }
+                                        .card p {
+                                            margin-left: 20px;
+                                            margin-right: 22px;
+                                        }
+                                        .grid_graphic {
+                                            display: grid;
+                                            padding-top: 40px;
+                                            margin: 0 auto;
+                                            grid-template-columns: repeat(1, 1fr);
+                                            max-width: 100%;
+                                            gap: 40px;
+                                        }
+                                        .image_graphic {
+                                            content: url(assets/image/10.png);
+                                            position: absolute;
+                                            width: 90%;
+                                            height: 55%;
+                                            right: 24px;
+                                            top: -20px;
+                                        }
+                                        .grid_form {
+                                            display: grid;
+                                            padding-top: 40px;
+                                            margin: 0 auto;
+                                            grid-template-columns: repeat(1, 1fr);
+                                            max-width: 100%;
+                                            gap: 40px;
+                                        }
+                                        .task {
+                                            width: 90%;
+                                        }
+                                        .task form {
+                                            margin: 0 auto;
+                                            padding-top: 15px;
+                                            width: 90%;
+                                        }
+                                        .stat {
+                                            width: 90%;
+                                        }
+                                        .footer ul,
+                                        a {
+                                            width: 22%;
+                                            margin-left: 10px;
+                                            font-size: 10px;
+                                        }
+                                        /* second_page*/
+                                        .square_profile {
+                                            display: flex;
+                                            flex-direction: column-reverse;
+                                            width: 100%;
+                                            margin: 0 auto;
+                                            z-index: 1;
+                                            margin-top: 100px;
+                                        }
+                                        .profile {
+                                            width: 90%;
+                                            margin: 0 auto;
+                                            position: relative;
+                                        }
+                                        .info_user {
+                                            width: 90%;
+                                            height: 300px;
+                                            margin: 0 auto;
+                                            margin-bottom: 100px;
+                                            text-align: center;
+                                            position: relative;
+                                        }
+                                        .info_user h3 {
+                                            font-size: 20px;
+                                            width: 35%;
+                                        }
+                                        .info_user p {
+                                            font-size: 16px;
+                                            padding: 0 30px;
+                                        }
+                                        .image_user {
+                                            content: url(assets/image/pic.png);
+                                            position: absolute;
+                                            top: -60px;
+                                            right: 137px;
+                                        }
+                                        .form_profile {
+                                            margin: 0 auto;
+                                            display: flex;
+                                        }
+                                        .footer p {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width: 400px) {
+                                        .container {
+                                            max-width: 375px;
+                                        }
+                                        .image_user {
+                                            content: url(assets/image/pic.png);
+                                            position: absolute;
+                                            top: -60px;
+                                            right: 85px;
+                                        }
+                                        .info_user p {
+                                            font-size: 14px;
+                                            padding: 0 30px;
+                                        }
+                                        .info_user h3 {
+                                            width: 40%;
+                                        }
+                                        .red_block {
+                                            position: absolute;
+                                            left: 17px;
+                                            top: -30px;
+                                            color: white;
+                                            background-color: #bd194b;
+                                            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+                                            width: 90%;
+                                            height: 75px;
+                                        }
+                                    }

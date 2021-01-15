@@ -1,0 +1,61 @@
+.easy-useful {
+    width: 500px;
+    text-align: center;
+}
+
+.easy-useful p {
+    color: #B0BEC5;
+}
+
+h3 {
+    position: relative;
+    font-size: 40px;
+}
+
+h3::after {
+    content: "Project Management Tool";
+    font-size: 26px;
+    position: absolute;
+    top: 55px;
+    left: 95px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.start-btn {
+    width: 150px;
+    height: 60px;
+    background-color: #1DE9B6;
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 10px -4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+/* homework services*/
+
+.easy-useful h4 {
+    font-size: 40px;
+}
+
+.services {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.accordion-button::after {
+    content: "";
+    background-image: url(assets/img/arrow.png)!important;
+    background-size: 0.8rem!important;
+}
+
+.accordion-button.collapsed {
+    border-bottom-width: 1px!important;
+}
+
+.accordion-button {
+    margin: 30px 0 30px 0!important;
+    -webkit-box-shadow: 0px 0px 4px 3px rgba(52, 52, 52, 0.15), 0px 0px 4px 3px rgba(52, 52, 52, 0.15);
+    box-shadow: 0px 0px 4px 3px rgba(52, 52, 52, 0.15), 0px 0px 4px 3px rgba(52, 52, 52, 0.15);
+}

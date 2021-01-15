@@ -1,0 +1,168 @@
+ul,
+li {
+    list-style: none;
+}
+
+#header li {
+    margin: 0px 10px;
+    color: #3C3D42;
+}
+
+
+/* section slider*/
+
+.bg_space {
+    background-image: url(img/bg_space.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 730px;
+    position: relative;
+    z-index: 0;
+}
+
+.text_slider {
+    height: 610px;
+    color: white;
+    z-index: 3;
+    width: 30%;
+    margin-left: 50px;
+}
+
+.text_slider button {
+    color: white;
+    margin-right: 220px;
+    border-color: #f8f9fa;
+    border-radius: 20px 20px
+}
+
+.box {
+    width: 70%;
+}
+
+.img_phone {
+    background-image: url(img/1.png);
+    height: 610px;
+    width: 950px;
+    position: relative;
+    margin-top: 120px;
+    z-index: 1;
+}
+
+
+/* section feature*/
+
+.feature_left {
+    width: 30%;
+}
+
+.feature_left {
+    border-right: 1px solid black;
+}
+
+.feature_left i {
+    font-size: 40px;
+}
+
+.feature_right {
+    margin-left: 100px;
+    width: 70%;
+}
+
+.feature_right i {
+    font-size: 200px;
+    color: green;
+}
+
+.border_green {
+    color: green;
+}
+
+
+/* section feature_product*/
+
+.product_feature_left button {
+    border-radius: 20px 20px;
+}
+
+.product_feature_left {
+    width: 50%;
+    margin: 100px 50px;
+}
+
+.product_feature_right {
+    width: 50%;
+}
+
+.img_product_phone {
+    background-image: url(img/se1.png);
+    background-size: cover;
+    position: relative;
+    width: 380px;
+    height: 696px;
+    z-index: 0;
+}
+
+.img_product_phon {
+    background-image: url(img/se2.png);
+    width: 264px;
+    height: 469px;
+    position: absolute;
+    z-index: 10;
+    top: 115px;
+    left: 78px;
+}
+
+
+/*gallery*/
+
+.img_gallery {
+    background-image: url(img/25.png);
+    height: 622px;
+    width: 296px;
+    position: relative;
+    z-index: 0;
+}
+
+.img_display {
+    background-image: url(img/26.png);
+    width: 251px;
+    height: 444px;
+    position: absolute;
+    left: 25px;
+    top: 90px;
+}
+
+
+/* section newsletter */
+
+.bg_newsletter {
+    background-color: #F3F5F5;
+    height: 362px;
+}
+
+#newsletter button {
+    border-radius: 20px 20px;
+}
+
+#newsletter input {
+    border-radius: 20px 20px;
+}
+
+
+/* footer*/
+
+.bg_footer {
+    height: 308px;
+    background-color: #2D312F;
+    color: white;
+    opacity: 0.8;
+}
+
+.bg_footer i {
+    font-size: 35px;
+}
+
+.icon_footer i {
+    font-size: 35px;
+}
